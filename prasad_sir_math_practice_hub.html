@@ -1,68 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="si">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Prasad Sir ගණිත පුහුණු මධ්‍යස්ථානය</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{min-height:100vh;background:linear-gradient(135deg,#e3f2ff,#fff7d6);color:#1f2937}.app{max-width:1050px;margin:auto;padding:18px}header,.card{background:#fff;border-radius:24px;padding:24px;box-shadow:0 12px 30px rgba(15,23,42,.08);border:1px solid rgba(255,255,255,.8)}header{text-align:center;margin-bottom:18px}.badge{display:inline-block;background:#e0f2fe;color:#0369a1;padding:7px 14px;border-radius:999px;font-weight:800;font-size:14px;margin-bottom:12px}h1{font-size:clamp(26px,5vw,44px);line-height:1.2;color:#0f172a;margin-bottom:12px}.subtitle{max-width:760px;margin:auto;font-size:17px;line-height:1.7;color:#475569}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px}button{border:0;cursor:pointer;border-radius:18px;padding:14px 18px;font-size:16px;font-weight:800;transition:.15s}button:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(15,23,42,.12)}.primary-btn{background:#2563eb;color:white}.secondary-btn{background:#facc15;color:#3f2f00}.soft-btn{background:#f1f5f9;color:#0f172a}.danger-btn{background:#fee2e2;color:#991b1b}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px}.grade-card{text-align:center;min-height:180px;display:flex;flex-direction:column;justify-content:space-between}.grade-card h2{font-size:26px;color:#0f172a;margin-bottom:8px}.grade-card p{color:#64748b;line-height:1.6;margin-bottom:14px}.section-title{font-size:24px;margin-bottom:14px;color:#0f172a}.topic-list{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.topic-btn{background:#ecfeff;color:#155e75;border:1px solid #a5f3fc;min-height:72px}.hidden{display:none!important}.practice-layout{display:grid;grid-template-columns:1.7fr .9fr;gap:16px}.question-box{background:#f8fafc;border-radius:22px;padding:22px;border:1px dashed #93c5fd;margin-bottom:16px}.question-meta{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:14px;color:#2563eb;font-weight:800;font-size:14px}.question-text{font-size:24px;line-height:1.6;color:#111827;font-weight:800}.answer-area{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}input{flex:1;min-width:180px;border:2px solid #bfdbfe;border-radius:16px;padding:14px 16px;font-size:18px;outline:0}input:focus{border-color:#2563eb;box-shadow:0 0 0 4px rgba(37,99,235,.12)}.feedback{border-radius:18px;padding:16px;line-height:1.7;font-weight:700;margin-bottom:14px}.feedback.correct{background:#dcfce7;color:#166534}.feedback.wrong{background:#fee2e2;color:#991b1b}.solution-box{background:#fff7ed;border:1px solid #fed7aa;border-radius:18px;padding:16px;margin-top:12px;color:#7c2d12;font-weight:700}.solution-box h3{font-size:18px;margin-bottom:10px;color:#9a3412}.solution-box ol{padding-left:22px;line-height:1.8}.solution-box li{margin-bottom:6px}.correct-method{background:#ecfdf5;border:1px solid #bbf7d0;color:#166534}.thinking-tip{background:#eff6ff;border:1px solid #bfdbfe;color:#1d4ed8;border-radius:14px;padding:10px 12px;margin-top:10px;font-size:15px}.score-card{background:linear-gradient(180deg,#fff,#f8fafc)}.score-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #e2e8f0;font-weight:700}.score-row:last-child{border-bottom:0}.progress-wrap{background:#e2e8f0;border-radius:999px;overflow:hidden;height:14px;margin-top:14px}.progress-bar{height:100%;width:0;background:#22c55e;transition:width .25s}.parent-box{line-height:1.8;color:#475569}footer{text-align:center;color:#64748b;padding:22px 0 8px;font-weight:700}@media(max-width:850px){.grid,.practice-layout{grid-template-columns:1fr}.topic-list{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.app{padding:12px}header,.card{border-radius:20px;padding:18px}.topic-list{grid-template-columns:1fr}.question-text{font-size:20px}button{width:100%}}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prasad Sir ගණිත පුහුණු මධ්‍යස්ථානය</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { background: linear-gradient(135deg, #e3f2ff, #fff7d6); color: #1f2937; min-height: 100vh; }
+    .app { max-width: 1050px; margin: 0 auto; padding: 18px; }
+    header { background: #ffffff; border-radius: 24px; padding: 24px; box-shadow: 0 12px 30px rgba(15,23,42,.08); margin-bottom: 18px; text-align: center; border: 1px solid rgba(255,255,255,.8); }
+    .badge { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 7px 14px; border-radius: 999px; font-weight: 700; font-size: 14px; margin-bottom: 12px; }
+    h1 { font-size: clamp(26px, 5vw, 44px); line-height: 1.2; color: #0f172a; margin-bottom: 12px; }
+    .subtitle { max-width: 760px; margin: 0 auto; font-size: 17px; line-height: 1.7; color: #475569; }
+    .hero-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+    button { border: none; cursor: pointer; border-radius: 18px; padding: 14px 18px; font-size: 16px; font-weight: 800; transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease; }
+    button:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(15,23,42,.12); }
+    .primary-btn { background: #2563eb; color: #fff; }
+    .secondary-btn { background: #facc15; color: #3f2f00; }
+    .soft-btn { background: #f1f5f9; color: #0f172a; }
+    .danger-btn { background: #fee2e2; color: #991b1b; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 18px; }
+    .card { background: #fff; border-radius: 24px; padding: 22px; box-shadow: 0 12px 30px rgba(15,23,42,.08); border: 1px solid rgba(255,255,255,.8); }
+    .grade-card { text-align: center; min-height: 180px; display: flex; flex-direction: column; justify-content: space-between; }
+    .grade-card h2 { font-size: 26px; color: #0f172a; margin-bottom: 8px; }
+    .grade-card p { color: #64748b; line-height: 1.6; margin-bottom: 14px; }
+    .section-title { font-size: 24px; margin-bottom: 14px; color: #0f172a; }
+    .topic-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .topic-btn { background: #ecfeff; color: #155e75; border: 1px solid #a5f3fc; min-height: 72px; }
+    .hidden { display: none !important; }
+    .practice-layout { display: grid; grid-template-columns: 1.7fr .9fr; gap: 16px; }
+    .question-box { background: #f8fafc; border-radius: 22px; padding: 22px; border: 1px dashed #93c5fd; margin-bottom: 16px; }
+    .question-meta { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; color: #2563eb; font-weight: 800; font-size: 14px; }
+    .question-text { font-size: 24px; line-height: 1.6; color: #111827; font-weight: 800; }
+    .answer-area { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+    input { flex: 1; min-width: 180px; border: 2px solid #bfdbfe; border-radius: 16px; padding: 14px 16px; font-size: 18px; outline: none; }
+    input:focus { border-color: #2563eb; box-shadow: 0 0 0 4px rgba(37,99,235,.12); }
+    .feedback { border-radius: 18px; padding: 16px; line-height: 1.7; font-weight: 700; margin-bottom: 14px; }
+    .feedback.correct { background: #dcfce7; color: #166534; }
+    .feedback.wrong { background: #fee2e2; color: #991b1b; }
+    .solution-box { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 18px; padding: 16px; margin-top: 12px; color: #7c2d12; font-weight: 700; }
+    .solution-box h3 { font-size: 18px; margin-bottom: 10px; color: #9a3412; }
+    .solution-box ol { padding-left: 22px; line-height: 1.8; }
+    .solution-box li { margin-bottom: 6px; }
+    .correct-method { background: #ecfdf5; border: 1px solid #bbf7d0; color: #166534; }
+    .thinking-tip { background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8; border-radius: 14px; padding: 10px 12px; margin-top: 10px; font-size: 15px; }
+    .score-card { background: linear-gradient(180deg, #fff, #f8fafc); }
+    .score-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #e2e8f0; font-weight: 700; }
+    .score-row:last-child { border-bottom: none; }
+    .progress-wrap { background: #e2e8f0; border-radius: 999px; overflow: hidden; height: 14px; margin-top: 14px; }
+    .progress-bar { height: 100%; width: 0%; background: #22c55e; transition: width .25s ease; }
+    .parent-box { line-height: 1.8; color: #475569; }
+    .parent-box strong { color: #0f172a; }
+    footer { text-align: center; color: #64748b; padding: 22px 0 8px; font-weight: 700; }
+    @media (max-width: 850px) { .grid, .practice-layout { grid-template-columns: 1fr; } .topic-list { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .app { padding: 12px; } header, .card { border-radius: 20px; padding: 18px; } .topic-list { grid-template-columns: 1fr; } .question-text { font-size: 20px; } button { width: 100%; } }
+  </style>
 </head>
-<body><div class="app">
-<header><span class="badge">3 • 4 • 5 වසර ගණිත පුහුණුව</span><h1>Prasad Sir ගණිත පුහුණු මධ්‍යස්ථානය</h1><p class="subtitle">Prasad Sirගේ පන්තියේ 3, 4, 5 වසර දරුවන්ට ගණිත ගැටලු දිනපතා practice කරමින් විශ්වාසය, වේගය සහ නිවැරදි බව වැඩි කරගන්න සකස් කළ online practice system එකකි.</p><div class="hero-actions"><button class="primary-btn" onclick="showDailyPractice()">අද ප්‍රශ්න 10</button><button class="secondary-btn" onclick="scrollToGrades()">වසර තෝරන්න</button></div></header>
-<section id="grades" class="grid"><div class="card grade-card"><div><h2>3 වසර</h2><p>මූලික ගණිත හැකියාවන් සහ සරල වචන ගැටලු පුහුණු වීමට.</p></div><button class="primary-btn" onclick="selectGrade(3)">3 වසර ආරම්භ කරන්න</button></div><div class="card grade-card"><div><h2>4 වසර</h2><p>මිනුම්, භාග, කාලය, වර්ගඵලය සහ තර්ක ගැටලු සඳහා.</p></div><button class="primary-btn" onclick="selectGrade(4)">4 වසර ආරම්භ කරන්න</button></div><div class="card grade-card"><div><h2>5 වසර</h2><p>ශිෂ්‍යත්ව මට්ටමේ ගැටලු සඳහා වැඩිදුර practice කිරීමට.</p></div><button class="primary-btn" onclick="selectGrade(5)">5 වසර ආරම්භ කරන්න</button></div></section>
-<section id="topics-section" class="card hidden"><h2 class="section-title" id="topics-title">මාතෘකාවක් තෝරන්න</h2><div id="topic-list" class="topic-list"></div></section>
-<section id="practice-section" class="card hidden"><div class="practice-layout"><div><h2 class="section-title" id="practice-title">Practice</h2><div class="question-box"><div class="question-meta"><span id="question-number">ප්‍රශ්නය 1</span><span id="question-topic">මාතෘකාව</span></div><div class="question-text" id="question-text">ප්‍රශ්නය මෙතන පෙන්වයි.</div></div><div class="answer-area"><input id="answer-input" type="text" placeholder="ඔබේ පිළිතුර ලියන්න" onkeydown="handleEnter(event)"><button class="primary-btn" onclick="checkAnswer()">පිළිතුර පරීක්ෂා කරන්න</button></div><div id="feedback" class="feedback hidden"></div><div id="solution-box" class="solution-box hidden"></div><div class="hero-actions" style="justify-content:flex-start"><button class="secondary-btn" onclick="nextQuestion()">ඊළඟ ප්‍රශ්නය</button><button class="soft-btn" onclick="backToTopics()">මාතෘකා වෙත</button><button class="danger-btn" onclick="resetPractice()">නැවත ආරම්භ කරන්න</button></div></div><aside class="card score-card"><h2 class="section-title">ප්‍රතිඵලය</h2><div class="score-row"><span>මුළු ප්‍රශ්න</span><span id="total-count">0</span></div><div class="score-row"><span>නිවැරදි</span><span id="correct-count">0</span></div><div class="score-row"><span>වැරදි</span><span id="wrong-count">0</span></div><div class="score-row"><span>ලකුණු</span><span id="percentage">0%</span></div><div class="progress-wrap"><div class="progress-bar" id="progress-bar"></div></div><p id="saved-score" style="margin-top:14px;color:#64748b;line-height:1.6"></p><p style="margin-top:10px;color:#64748b;line-height:1.6">Topic එකේ ප්‍රශ්න අඩු නම් එකම ප්‍රශ්නය repeat නොවෙන්න ඒ වසරේ mixed questions auto load වෙනවා.</p></aside></div></section>
-<section class="card parent-box"><h2 class="section-title">දෙමව්පියන්ට කෙටි උපදෙස්</h2><p><strong>දවසකට ගැටලු 10ක්</strong> කරවීමෙන් දරුවාගේ ගණිත බිය අඩුවෙයි. වැරදුණු ප්‍රශ්න වෙනම පොතක ලියවා, සතියකට වරක් ඒ ප්‍රශ්න නැවත කරවන්න.</p></section><footer>Prasad Sir ගණිත පුහුණු මධ්‍යස්ථානය</footer></div>
+<body>
+  <div class="app">
+    <header>
+      <span class="badge">3 • 4 • 5 වසර ගණිත පුහුණුව</span>
+      <h1>Prasad Sir ගණිත පුහුණු මධ්‍යස්ථානය</h1>
+      <p class="subtitle">ගණිත ගැටලු විසඳීම අමාරු දරුවන්ට දිනපතා පුහුණුවෙන් විශ්වාසය, වේගය සහ නිවැරදි බව වැඩි කිරීමට සකස් කළ සරල online practice system එකකි.</p>
+      <div class="hero-actions">
+        <button class="primary-btn" onclick="showDailyPractice()">අද ප්‍රශ්න 10</button>
+        <button class="secondary-btn" onclick="scrollToGrades()">වසර තෝරන්න</button>
+      </div>
+    </header>
+    <section id="grades" class="grid">
+      <div class="card grade-card"><div><h2>3 වසර</h2><p>මූලික ගණිත හැකියාවන් සහ සරල වචන ගැටලු පුහුණු වීමට.</p></div><button class="primary-btn" onclick="selectGrade(3)">3 වසර ආරම්භ කරන්න</button></div>
+      <div class="card grade-card"><div><h2>4 වසර</h2><p>මිනුම්, භාග, කාලය, වර්ගඵලය සහ තර්ක ගැටලු සඳහා.</p></div><button class="primary-btn" onclick="selectGrade(4)">4 වසර ආරම්භ කරන්න</button></div>
+      <div class="card grade-card"><div><h2>5 වසර</h2><p>ශිෂ්‍යත්ව මට්ටමේ ගැටලු සඳහා වැඩිදුර practice කිරීමට.</p></div><button class="primary-btn" onclick="selectGrade(5)">5 වසර ආරම්භ කරන්න</button></div>
+    </section>
+    <section id="topics-section" class="card hidden"><h2 class="section-title" id="topics-title">මාතෘකාවක් තෝරන්න</h2><div id="topic-list" class="topic-list"></div></section>
+    <section id="practice-section" class="card hidden">
+      <div class="practice-layout">
+        <div>
+          <h2 class="section-title" id="practice-title">Practice</h2>
+          <div class="question-box"><div class="question-meta"><span id="question-number">ප්‍රශ්නය 1</span><span id="question-topic">මාතෘකාව</span></div><div class="question-text" id="question-text">ප්‍රශ්නය මෙතන පෙන්වයි.</div></div>
+          <div class="answer-area"><input id="answer-input" type="text" placeholder="ඔබේ පිළිතුර ලියන්න" onkeydown="handleEnter(event)" /><button class="primary-btn" onclick="checkAnswer()">පිළිතුර පරීක්ෂා කරන්න</button></div>
+          <div id="feedback" class="feedback hidden"></div><div id="solution-box" class="solution-box hidden"></div>
+          <div class="hero-actions" style="justify-content:flex-start;"><button class="secondary-btn" onclick="nextQuestion()">ඊළඟ ප්‍රශ්නය</button><button class="soft-btn" onclick="backToTopics()">මාතෘකා වෙත</button><button class="danger-btn" onclick="resetPractice()">නැවත ආරම්භ කරන්න</button></div>
+        </div>
+        <aside class="card score-card"><h2 class="section-title">ප්‍රතිඵලය</h2><div class="score-row"><span>මුළු ප්‍රශ්න</span><span id="total-count">0</span></div><div class="score-row"><span>නිවැරදි</span><span id="correct-count">0</span></div><div class="score-row"><span>වැරදි</span><span id="wrong-count">0</span></div><div class="score-row"><span>ලකුණු</span><span id="percentage">0%</span></div><div class="progress-wrap"><div class="progress-bar" id="progress-bar"></div></div><p id="saved-score" style="margin-top:14px;color:#64748b;line-height:1.6;"></p></aside>
+      </div>
+    </section>
+    <section class="card parent-box"><h2 class="section-title">දෙමව්පියන්ට කෙටි උපදෙස්</h2><p><strong>දවසකට ගැටලු 10ක්</strong> කරවීමෙන් දරුවාගේ ගණිත බිය අඩුවෙයි. වැරදුණු ප්‍රශ්න වෙනම පොතක ලියවා, සතියකට වරක් ඒ ප්‍රශ්න නැවත කරවන්න. දරුවාට ඉක්මනට උත්තර කියා නොදී, පියවරෙන් පියවර හිතන්න ඉඩ දෙන්න.</p></section>
+    <footer>Prasad Sir ගණිත පුහුණු මධ්‍යස්ථානය</footer>
+  </div>
 <script>
 const topics={3:["එකතු කිරීම","අඩු කිරීම","ගුණ කිරීම","බෙදීම","මුදල් ගැටලු","කාලය","රූප රටා","වචන ගැටලු"],4:["විශාල සංඛ්‍යා","ගුණ කිරීම","බෙදීම","භාග","මිනුම්","වර්ගඵලය","කාලය","තර්ක ගැටලු"],5:["ශිෂ්‍යත්ව වචන ගැටලු","රටා","කාලය හා දුර","මුදල් ගැටලු","භාග","දත්ත වගු","මිශ්‍ර ප්‍රශ්න"]};
 const questions=[
-{grade:3,topic:"එකතු කිරීම",q:"25 + 36 = ?",a:"61",exp:"25ට 36 එකතු කළ විට 61 වේ.",steps:["එකකස්ථානය: 5 + 6 = 11.","1 ලියලා 1ක් දසකස්ථානයට ගෙන යන්න.","දසකස්ථානය: 2 + 3 + 1 = 6.","පිළිතුර 61යි."],tip:"එකතු කිරීමේදී දකුණු පැත්තෙන් පටන් ගන්න."},
-{grade:3,topic:"අඩු කිරීම",q:"80 - 45 = ?",a:"35",exp:"80න් 45 අඩු කළ විට 35 වේ.",steps:["80න් 40 අඩු කරන්න: 40.","ඉතිරි 5 අඩු කරන්න: 35.","පිළිතුර 35යි."],tip:"අඩු කිරීම කොටස් කරලා කරන්න."},
-{grade:3,topic:"ගුණ කිරීම",q:"6 × 4 = ?",a:"24",exp:"6 × 4 = 24.",steps:["6 × 4 කියන්නේ 6 හතර වරක්.","6 + 6 + 6 + 6 = 24."],tip:"ගුණ කිරීම නැවත නැවත එකතු කිරීමක්."},
-{grade:3,topic:"බෙදීම",q:"24 ÷ 3 = ?",a:"8",exp:"24 සමාන කොටස් 3කට බෙදූ විට 8 වේ.",steps:["3 × 8 = 24.","ඒ නිසා 24 ÷ 3 = 8."],tip:"බෙදීම ගුණ කිරීමෙන් check කරන්න."},
-{grade:3,topic:"මුදල් ගැටලු",q:"රු.100කින් රු.35ක් වියදම් කළා. ඉතිරි මුදල කීයද?",a:"65",exp:"100 - 35 = 65.",steps:["මුලින් තිබුණ මුදල 100යි.","වියදම් කළ මුදල 35යි.","100 - 35 = 65."],tip:"ඉතිරි කියන වචනයට අඩු කිරීම භාවිතා කරන්න."},
-{grade:3,topic:"කාලය",q:"පැය 2ක් = මිනිත්තු කීයද?",a:"120",exp:"පැය 2 = මිනිත්තු 120.",steps:["පැය 1 = මිනිත්තු 60.","60 × 2 = 120."],tip:"පැය මිනිත්තු වලට මාරු කරන විට 60න් ගුණ කරන්න."},
-{grade:3,topic:"රූප රටා",q:"5, 10, 15, 20, __",a:"25",exp:"සෑම වරම 5 බැගින් වැඩි වේ.",steps:["5 සිට 10ට +5.","10 සිට 15ට +5.","20 + 5 = 25."],tip:"රටාවක වෙනස සොයන්න."},
-{grade:3,topic:"වචන ගැටලු",q:"මල් 12ක් ළමයි 3කට සමානව බෙදුවොත් එක් ළමයෙකුට මල් කීයද?",a:"4",exp:"12 ÷ 3 = 4.",steps:["මුළු මල් 12යි.","ළමයි 3කට බෙදන්න.","12 ÷ 3 = 4."],tip:"සමානව බෙදුවොත් බෙදීමක්."},
-{grade:3,topic:"එකතු කිරීම",q:"40 + 20 - 10 = ?",a:"50",exp:"40 + 20 = 60. 60 - 10 = 50.",steps:["40 + 20 = 60.","60 - 10 = 50."],tip:"පියවරෙන් කරන්න."},
-{grade:3,topic:"ගුණ කිරීම",q:"9 × 2 = ?",a:"18",exp:"9 × 2 = 18.",steps:["9 + 9 = 18."],tip:"2න් ගුණ කරනවා කියන්නේ දෙවරක් එකතු කරන එකයි."},
-{grade:4,topic:"විශාල සංඛ්‍යා",q:"245 + 378 = ?",a:"623",exp:"245 + 378 = 623.",steps:["5 + 8 = 13.","4 + 7 + 1 = 12.","2 + 3 + 1 = 6.","පිළිතුර 623යි."],tip:"ස්ථාන අගය හරියට තබා ගන්න."},
-{grade:4,topic:"විශාල සංඛ්‍යා",q:"900 - 456 = ?",a:"444",exp:"900 - 456 = 444.",steps:["900 - 400 = 500.","500 - 50 = 450.","450 - 6 = 444."],tip:"සංඛ්‍යාව කොටස් කර අඩු කරන්න."},
-{grade:4,topic:"ගුණ කිරීම",q:"24 × 5 = ?",a:"120",exp:"24 × 5 = 120.",steps:["20 × 5 = 100.","4 × 5 = 20.","100 + 20 = 120."],tip:"කොටස් කර ගුණ කරන්න."},
-{grade:4,topic:"බෙදීම",q:"144 ÷ 12 = ?",a:"12",exp:"144 ÷ 12 = 12.",steps:["12 × 10 = 120.","ඉතිරි 24යි.","12 × 2 = 24.","10 + 2 = 12."],tip:"ගුණිතය හිතලා බෙදන්න."},
-{grade:4,topic:"භාග",q:"1/2 + 1/2 = ?",a:"1",exp:"අර්ධ දෙකක් එකතු වුණාම 1 වේ.",steps:["1/2 + 1/2 = 2/2.","2/2 = 1."],tip:"denominator එක සමාන නම් numerator එකතු කරන්න."},
-{grade:4,topic:"මිනුම්",q:"1m = cm කීයද?",a:"100",exp:"1m = 100cm.",steps:["1 meter = 100 centimeters."],tip:"m සිට cm වෙත 100න් ගුණ කරන්න."},
-{grade:4,topic:"වර්ගඵලය",q:"දිග 6cm, පළල 4cm වූ සෘජුකෝණාස්‍රයේ වර්ගඵලය කීයද?",a:"24",exp:"6 × 4 = 24.",steps:["වර්ගඵලය = දිග × පළල.","6 × 4 = 24."],tip:"වර්ගඵලයට දිග × පළල."},
-{grade:4,topic:"කාලය",q:"පැය 3 මිනිත්තු 30 = මිනිත්තු කීයද?",a:"210",exp:"180 + 30 = 210.",steps:["පැය 3 = 60 × 3 = 180.","180 + 30 = 210."],tip:"පැය මුලින් මිනිත්තු වලට මාරු කරන්න."},
-{grade:4,topic:"තර්ක ගැටලු",q:"3, 6, 12, 24, __",a:"48",exp:"සෑම වරම 2න් ගුණ වේ.",steps:["3×2=6.","6×2=12.","24×2=48."],tip:"රටාව +ද ×ද බලන්න."},
-{grade:4,topic:"මුදල් ගැටලු",q:"රු.500කින් රු.275ක් වියදම් කළා. ඉතිරි මුදල කීයද?",a:"225",exp:"500 - 275 = 225.",steps:["500 - 275 = 225."],tip:"ඉතිරි මුදලට අඩු කරන්න."},
-{grade:5,topic:"මිශ්‍ර ප්‍රශ්න",q:"125 × 8 = ?",a:"1000",exp:"125 × 8 = 1000.",steps:["125 × 4 = 500.","500 × 2 = 1000."],tip:"125 shortcut මතක තබාගන්න."},
-{grade:5,topic:"මිශ්‍ර ප්‍රශ්න",q:"960 ÷ 12 = ?",a:"80",exp:"960 ÷ 12 = 80.",steps:["12 × 8 = 96.","12 × 80 = 960."],tip:"අගට 0 තියෙන විට pattern එක බලන්න."},
-{grade:5,topic:"භාග",q:"2/4 සරල කළ විට?",a:"1/2",exp:"2/4 = 1/2.",steps:["2 සහ 4 දෙකම 2න් බෙදන්න.","2÷2=1, 4÷2=2."],tip:"ඉහළ සහ පහළ එකම සංඛ්‍යාවෙන් බෙදන්න."},
-{grade:5,topic:"රටා",q:"5, 9, 17, 33, __",a:"65",exp:"වෙනස්කම් 4, 8, 16, 32. 33 + 32 = 65.",steps:["9-5=4.","17-9=8.","33-17=16.","ඊළඟ වෙනස 32යි.","33+32=65."],tip:"වෙනස්කම් වෙනම ලියන්න."},
-{grade:5,topic:"කාලය හා දුර",q:"බස් රථයක් පැයකට km 40ක් යයි. පැය 3කදී දුර කීයද?",a:"120",exp:"40 × 3 = 120km.",steps:["දුර = වේගය × කාලය.","40 × 3 = 120."],tip:"වේගය සහ කාලය දීලා දුර අහන විට ගුණ කරන්න."},
-{grade:5,topic:"මුදල් ගැටලු",q:"රු.1200ක් ළමයි 4කට සමානව බෙදුවොත් එක් අයෙකුට කීයද?",a:"300",exp:"1200 ÷ 4 = 300.",steps:["1200 ÷ 4 = 300."],tip:"සමානව බෙදන විට බෙදීම."},
-{grade:5,topic:"මිශ්‍ර ප්‍රශ්න",q:"25% of 200 = ?",a:"50",exp:"25% = 1/4. 200 ÷ 4 = 50.",steps:["25% කියන්නේ හතරෙන් එකක්.","200 ÷ 4 = 50."],tip:"25% = 1/4."},
-{grade:5,topic:"මිශ්‍ර ප්‍රශ්න",q:"3kg = g කීයද?",a:"3000",exp:"3kg = 3000g.",steps:["1kg = 1000g.","1000 × 3 = 3000."],tip:"kg සිට g වෙත 1000න් ගුණ කරන්න."},
-{grade:5,topic:"මිශ්‍ර ප්‍රශ්න",q:"දිග 10cm, පළල 5cm. වර්ගඵලය කීයද?",a:"50",exp:"10 × 5 = 50.",steps:["වර්ගඵලය = දිග × පළල.","10 × 5 = 50."],tip:"වර්ගඵලයට දිග × පළල."},
-{grade:5,topic:"දත්ත වගු",q:"ප්‍රශ්න 20න් 15ක් හරි නම් ප්‍රතිශතය කීයද?",a:"75",exp:"15/20 × 100 = 75%.",steps:["15 ÷ 20 × 100 = 75."],tip:"කොටස ÷ මුළු ගණන × 100."}
+{grade:3,topic:"එකතු කිරීම",q:"28 + 17 = ?",a:"45",exp:"28ට 17 එකතු කළ විට 45 වේ.",steps:["එකකස්ථානය: 8 + 7 = 15. 5 ලියලා 1ක් ගෙන යන්න.","දසකස්ථානය: 2 + 1 + 1 = 4.","ඒ නිසා පිළිතුර 45යි."],tip:"එකතු කිරීමේදී එකකස්ථානයෙන් පටන් ගන්න."},
+{grade:3,topic:"එකතු කිරීම",q:"36 + 29 = ?",a:"65",exp:"36ට 29 එකතු කළ විට 65 වේ.",steps:["6 + 9 = 15. 5 ලියලා 1ක් ගෙන යන්න.","3 + 2 + 1 = 6.","පිළිතුර 65යි."],tip:"ගෙන යන අංකය අමතක නොකරන්න."},
+{grade:3,topic:"එකතු කිරීම",q:"රුවන්ට මැණික් 24ක් තිබුණි. අක්කා තවත් 18ක් දුන්නා. දැන් මැණික් කීයද?",a:"42",exp:"24 + 18 = 42.",steps:["මුලින් තිබුණේ 24යි.","තවත් 18ක් ලැබුණා.","එකතුව: 24 + 18 = 42."],tip:"‘තවත් ලැබුණා’ කියන්නේ එකතු කිරීමක්."},
+{grade:3,topic:"අඩු කිරීම",q:"72 - 38 = ?",a:"34",exp:"72න් 38 අඩු කළ විට 34 වේ.",steps:["72න් 30 අඩු කරන්න: 42.","42න් 8 අඩු කරන්න: 34.","ඒ නිසා පිළිතුර 34යි."],tip:"අමාරු අඩු කිරීම කොටස් කරලා කරන්න."},
+{grade:3,topic:"අඩු කිරීම",q:"90 - 47 = ?",a:"43",exp:"90 - 47 = 43.",steps:["90න් 40 අඩු කරන්න: 50.","50න් 7 අඩු කරන්න: 43.","පිළිතුර 43යි."],tip:"47 = 40 + 7 ලෙස බෙදා බලන්න."},
+{grade:3,topic:"අඩු කිරීම",q:"පොතක පිටු 85ක් ඇත. කමල් පිටු 29ක් කියවීය. ඉතිරි පිටු කීයද?",a:"56",exp:"85 - 29 = 56.",steps:["මුළු පිටු 85යි.","කියවූ පිටු 29යි.","ඉතිරි සොයන්න අඩු කරන්න: 85 - 29 = 56."],tip:"‘ඉතිරි’ කියන වචනය අඩු කිරීමට සලකුණකි."},
+{grade:3,topic:"ගුණ කිරීම",q:"7 × 6 = ?",a:"42",exp:"7 × 6 = 42.",steps:["7 හය වරක් එකතු කරනවා කියලා හිතන්න.","7 + 7 + 7 + 7 + 7 + 7 = 42.","ඒ නිසා පිළිතුර 42යි."],tip:"ගුණ කිරීම repeated addition එකක්."},
+{grade:3,topic:"ගුණ කිරීම",q:"8 × 5 = ?",a:"40",exp:"8 × 5 = 40.",steps:["8 × 5 කියන්නේ 8ක් 5 වරක්.","8 + 8 + 8 + 8 + 8 = 40."],tip:"5න් ගුණ කිරීමේදී counting by 5 හෝ repeated addition භාවිතා කරන්න."},
+{grade:3,topic:"ගුණ කිරීම",q:"මල් පේලි 4ක් ඇත. එක් පේලියක මල් 9ක් ඇත. මුළු මල් කීයද?",a:"36",exp:"4 × 9 = 36.",steps:["පේලි 4ක් තියෙනවා.","එක් පේලියක මල් 9යි.","මුළු ගණන = 4 × 9 = 36."],tip:"එක සමාන කණ්ඩායම් කිහිපයක් නම් ගුණ කිරීම භාවිතා කරන්න."},
+{grade:3,topic:"බෙදීම",q:"36 ÷ 4 = ?",a:"9",exp:"36 සමාන කොටස් 4කට බෙදූ විට එක් කොටස 9යි.",steps:["4 × 9 = 36 බව හිතන්න.","ඒ නිසා 36 ÷ 4 = 9."],tip:"බෙදීමේ පිළිතුර ගුණ කිරීමෙන් check කරන්න."},
+{grade:3,topic:"බෙදීම",q:"45 ÷ 5 = ?",a:"9",exp:"45 ÷ 5 = 9.",steps:["5 × 9 = 45.","ඒ නිසා 45 ÷ 5 = 9."],tip:"5 ගුණිත මතක තබාගන්න."},
+{grade:3,topic:"බෙදීම",q:"ලඩ්ඩු 32ක් ළමයි 8කට සමානව බෙදුවොත් එක් ළමයෙකුට කීයද?",a:"4",exp:"32 ÷ 8 = 4.",steps:["මුළු ලඩ්ඩු 32යි.","ළමයි 8කට සමානව බෙදන්න ඕන.","32 ÷ 8 = 4."],tip:"‘සමානව බෙදුවොත්’ කියන්නේ බෙදීමක්."},
+{grade:3,topic:"මුදල් ගැටලු",q:"රු.200කින් රු.75ක් වියදම් කළා. ඉතිරි මුදල කීයද?",a:"125",exp:"200 - 75 = 125.",steps:["මුලින් තිබුණ මුදල රු.200යි.","වියදම් කළ මුදල රු.75යි.","200 - 75 = 125."],tip:"මුදල් ගැටලුවක ඉතිරි මුදලට අඩු කිරීම."},
+{grade:3,topic:"මුදල් ගැටලු",q:"රු.50 බැගින් පොත් 3ක් ගත්තොත් මුළු මුදල කීයද?",a:"150",exp:"50 × 3 = 150.",steps:["එක් පොතක් රු.50යි.","පොත් 3ක් තියෙනවා.","50 × 3 = 150."],tip:"එකක මිල × ගණන = මුළු මුදල."},
+{grade:3,topic:"කාලය",q:"පැය 3ක් = මිනිත්තු කීයද?",a:"180",exp:"පැය 3 = මිනිත්තු 180.",steps:["පැය 1 = මිනිත්තු 60යි.","60 × 3 = 180."],tip:"පැය මිනිත්තු වලට මාරු කිරීමට 60න් ගුණ කරන්න."},
+{grade:3,topic:"කාලය",q:"මිනිත්තු 90ක් = පැය කීයද සහ මිනිත්තු කීයද?",a:"1පැය30",exp:"90 මිනිත්තු = පැය 1 මිනිත්තු 30.",steps:["මිනිත්තු 60 = පැය 1යි.","90 - 60 = 30.","ඒ නිසා පැය 1 මිනිත්තු 30යි."],tip:"60 මිනිත්තු = පැය 1 බව මතක තබාගන්න."},
+{grade:3,topic:"රූප රටා",q:"2, 4, 6, 8, __",a:"10",exp:"සෑම වරම 2 බැගින් වැඩි වේ.",steps:["2 සිට 4ට +2.","4 සිට 6ට +2.","8 + 2 = 10."],tip:"රටාවක වෙනස සොයන්න."},
+{grade:3,topic:"රූප රටා",q:"3, 6, 9, 12, __",a:"15",exp:"සෑම වරම 3 බැගින් වැඩි වේ.",steps:["3 සිට 6ට +3.","6 සිට 9ට +3.","12 + 3 = 15."],tip:"සමාන වෙනසක් ඇත්ද බලන්න."},
+{grade:3,topic:"වචන ගැටලු",q:"අම්මා ඇපල් 18ක් ගත්තා. ඒවායින් 6ක් දුන්නා. ඉතිරි ඇපල් කීයද?",a:"12",exp:"18 - 6 = 12.",steps:["මුලින් ඇපල් 18යි.","දුන්නේ 6යි.","18 - 6 = 12."],tip:"දීමෙන් ගණන අඩුවෙයි."},
+{grade:3,topic:"වචන ගැටලු",q:"පෙට්ටි 5ක් ඇත. එක් පෙට්ටියක බෝල 4ක් ඇත. මුළු බෝල කීයද?",a:"20",exp:"5 × 4 = 20.",steps:["පෙට්ටි 5යි.","එක් පෙට්ටියක බෝල 4යි.","5 × 4 = 20."],tip:"එක සමාන කණ්ඩායම් නම් ගුණ කිරීම."},
+{grade:4,topic:"විශාල සංඛ්‍යා",q:"1,248 + 376 = ?",a:"1624",exp:"1,248 + 376 = 1,624.",steps:["8 + 6 = 14. 4 ලියලා 1ක් ගෙන යන්න.","4 + 7 + 1 = 12. 2 ලියලා 1ක් ගෙන යන්න.","2 + 3 + 1 = 6.","1 ඉදිරියට එන නිසා පිළිතුර 1,624යි."],tip:"ස්ථාන අගය align කරලා එකතු කරන්න."},
+{grade:4,topic:"විශාල සංඛ්‍යා",q:"2,000 - 785 = ?",a:"1215",exp:"2,000 - 785 = 1,215.",steps:["2,000න් 700 අඩු කරන්න: 1,300.","ඊළඟට 80 අඩු කරන්න: 1,220.","ඊළඟට 5 අඩු කරන්න: 1,215."],tip:"785 = 700 + 80 + 5 ලෙස බෙදා අඩු කරන්න."},
+{grade:4,topic:"විශාල සංඛ්‍යා",q:"3,456 හි සියකස්ථානයේ ඇති අංකයේ අගය කීයද?",a:"400",exp:"3,456 හි සියකස්ථානයේ අංකය 4යි. එහි අගය 400යි.",steps:["සංඛ්‍යාව: 3,456.","සියකස්ථානයේ අංකය 4.","4 සියය = 400."],tip:"අංකය සහ අංකයේ අගය වෙනස් දෙකක්."},
+{grade:4,topic:"ගුණ කිරීම",q:"36 × 4 = ?",a:"144",exp:"36 × 4 = 144.",steps:["30 × 4 = 120.","6 × 4 = 24.","120 + 24 = 144."],tip:"ගුණ කිරීමේදී tens සහ ones වෙන් කරන්න."},
+{grade:4,topic:"ගුණ කිරීම",q:"25 × 6 = ?",a:"150",exp:"25 × 6 = 150.",steps:["25 × 4 = 100.","25 × 2 = 50.","100 + 50 = 150."],tip:"25 වගේ සංඛ්‍යා shortcut වලින් හිතන්න."},
+{grade:4,topic:"ගුණ කිරීම",q:"පේලි 12ක් ඇත. එක් පේලියක ළමයි 8ක් නම් මුළු ළමයි කීයද?",a:"96",exp:"12 × 8 = 96.",steps:["පේලි 12යි.","එක් පේලියක 8යි.","12 × 8 = 96."],tip:"Rows × each row = total."},
+{grade:4,topic:"බෙදීම",q:"168 ÷ 7 = ?",a:"24",exp:"168 ÷ 7 = 24.",steps:["7 × 20 = 140.","168 - 140 = 28.","7 × 4 = 28.","20 + 4 = 24."],tip:"ලොකු බෙදීම කොටස් කරලා කරන්න."},
+{grade:4,topic:"බෙදීම",q:"225 ÷ 9 = ?",a:"25",exp:"225 ÷ 9 = 25.",steps:["9 × 20 = 180.","225 - 180 = 45.","9 × 5 = 45.","20 + 5 = 25."],tip:"බෙදීමේදී ගුණිතය සොයා යන්න."},
+{grade:4,topic:"භාග",q:"3/4 න් 1/4 අඩු කළ විට?",a:"1/2",exp:"3/4 - 1/4 = 2/4 = 1/2.",steps:["Denominator එක සමානයි: 4.","3 - 1 = 2.","2/4 සරල කළ විට 1/2යි."],tip:"භාග අඩු කිරීමේදී denominator එක සමාන නම් numerator අඩු කරන්න."},
+{grade:4,topic:"භාග",q:"1 සම්පූර්ණය තුළ 1/4 ක කොටස් කීයක් තිබේද?",a:"4",exp:"1 සම්පූර්ණය = 4/4. ඒ නිසා 1/4 කොටස් 4ක් ඇත.",steps:["සම්පූර්ණ 1ක් 4 සමාන කොටස් කරයි.","එක් කොටස 1/4යි.","එවැනි කොටස් 4ක් එකතු වුණාම 1ක් වේ."],tip:"1 = 4/4, 1 = 2/2 වගේ සමාන භාග මතක තබාගන්න."},
+{grade:4,topic:"මිනුම්",q:"2m 50cm = cm කීයද?",a:"250",exp:"2m = 200cm. 200cm + 50cm = 250cm.",steps:["1m = 100cm.","2m = 200cm.","200 + 50 = 250."],tip:"m සිට cm වෙත 100න් ගුණ කරන්න."},
+{grade:4,topic:"මිනුම්",q:"1kg 250g = g කීයද?",a:"1250",exp:"1kg = 1000g. 1000g + 250g = 1250g.",steps:["1kg = 1000g.","1000 + 250 = 1250."],tip:"kg සිට g වෙත 1000න් ගුණ කරන්න."},
+{grade:4,topic:"වර්ගඵලය",q:"දිග 9cm, පළල 5cm වූ සෘජුකෝණාස්‍රයේ වර්ගඵලය කීයද?",a:"45",exp:"වර්ගඵලය = 9 × 5 = 45cm².",steps:["වර්ගඵලය = දිග × පළල.","9 × 5 = 45."],tip:"වර්ගඵලයට square units භාවිතා වේ."},
+{grade:4,topic:"වර්ගඵලය",q:"පැත්ත 7cm වූ චතුරස්‍රයක වර්ගඵලය කීයද?",a:"49",exp:"චතුරස්‍රයේ වර්ගඵලය = පැත්ත × පැත්ත = 7 × 7 = 49cm².",steps:["චතුරස්‍රයේ සියලු පැති සමානයි.","වර්ගඵලය = 7 × 7.","7 × 7 = 49."],tip:"චතුරස්‍රයක වර්ගඵලය පැත්ත × පැත්ත."},
+{grade:4,topic:"කාලය",q:"උදේ 8:30 සිට 10:00 දක්වා කාලය කීයද?",a:"1පැය30",exp:"8:30 සිට 10:00 දක්වා පැය 1 මිනිත්තු 30යි.",steps:["8:30 සිට 9:30 = පැය 1යි.","9:30 සිට 10:00 = මිනිත්තු 30යි.","මුළු කාලය පැය 1 මිනිත්තු 30යි."],tip:"කාල වෙනස පියවර දෙකකින් ගණනය කරන්න."},
+{grade:4,topic:"තර්ක ගැටලු",q:"4, 8, 16, 32, __",a:"64",exp:"සෑම වරම 2න් ගුණ වේ. 32 × 2 = 64.",steps:["4 × 2 = 8.","8 × 2 = 16.","16 × 2 = 32.","32 × 2 = 64."],tip:"ගුණක රටා හඳුනාගන්න."},
+{grade:4,topic:"තර්ක ගැටලු",q:"100, 90, 80, 70, __",a:"60",exp:"සෑම වරම 10 බැගින් අඩු වේ.",steps:["100 සිට 90ට -10.","90 සිට 80ට -10.","70 - 10 = 60."],tip:"අඩුවන රටා වල වෙනස සොයන්න."},
+{grade:4,topic:"මුදල් ගැටලු",q:"රු.120 බැගින් pens 4ක් ගත්තොත් මුළු මුදල කීයද?",a:"480",exp:"120 × 4 = 480.",steps:["එක් pen එක රු.120යි.","pens 4ක් තියෙනවා.","120 × 4 = 480."],tip:"එකක මිල × ගණන = මුළු මුදල."},
+{grade:4,topic:"මුදල් ගැටලු",q:"රු.1000කින් රු.365ක් වියදම් කළා. ඉතිරි මුදල කීයද?",a:"635",exp:"1000 - 365 = 635.",steps:["1000 - 300 = 700.","700 - 60 = 640.","640 - 5 = 635."],tip:"ලොකු අඩු කිරීම කොටස් කරලා කරන්න."},
+{grade:5,topic:"ශිෂ්‍යත්ව වචන ගැටලු",q:"පන්තියේ ළමයි 36ක් සිටිති. ඔවුන් 4 සමාන කණ්ඩායම් කළහ. එක් කණ්ඩායමක ළමයි කීයද?",a:"9",exp:"36 ÷ 4 = 9.",steps:["මුළු ළමයි 36යි.","සමාන කණ්ඩායම් 4ක්.","එක් කණ්ඩායම = 36 ÷ 4 = 9."],tip:"සමාන කණ්ඩායම් නම් බෙදීම."},
+{grade:5,topic:"ශිෂ්‍යත්ව වචන ගැටලු",q:"රුවන්ට රු.850ක් තිබුණි. ඔහු රු.275ක පොත් සහ රු.190ක pen set එකක් ගත්තා. ඉතිරි මුදල කීයද?",a:"385",exp:"850 - (275 + 190) = 385.",steps:["වියදම් මුළු මුදල: 275 + 190 = 465.","ඉතිරි මුදල: 850 - 465 = 385."],tip:"වියදම් කිහිපයක් නම් මුලින් එකතු කර පසුව අඩු කරන්න."},
+{grade:5,topic:"ශිෂ්‍යත්ව වචන ගැටලු",q:"බස් රථයක ආසන 48ක් ඇත. එවැනි බස් 7ක මුළු ආසන කීයද?",a:"336",exp:"48 × 7 = 336.",steps:["එක් බස් එකක ආසන 48යි.","බස් 7ක් තියෙනවා.","48 × 7 = 336."],tip:"එකකට ඇති ගණන × ඒවායේ ගණන."},
+{grade:5,topic:"රටා",q:"2, 5, 11, 23, 47, __",a:"95",exp:"සෑම පියවරකම ×2 + 1 වේ.",steps:["2 × 2 + 1 = 5.","5 × 2 + 1 = 11.","11 × 2 + 1 = 23.","23 × 2 + 1 = 47.","47 × 2 + 1 = 95."],tip:"Advanced pattern එකක multiplication + addition දෙකම තිබිය හැකිය."},
+{grade:5,topic:"රටා",q:"81, 27, 9, 3, __",a:"1",exp:"සෑම වරම 3න් බෙදේ.",steps:["81 ÷ 3 = 27.","27 ÷ 3 = 9.","9 ÷ 3 = 3.","3 ÷ 3 = 1."],tip:"රටාවක් අඩුවෙද්දී බෙදීමක්ද බලන්න."},
+{grade:5,topic:"රටා",q:"1, 4, 9, 16, 25, __",a:"36",exp:"මෙය square number pattern එකකි. 6 × 6 = 36.",steps:["1 = 1×1.","4 = 2×2.","9 = 3×3.","16 = 4×4.","25 = 5×5.","ඊළඟට 6×6 = 36."],tip:"1², 2², 3² වගේ square numbers මතක තබාගන්න."},
+{grade:5,topic:"කාලය හා දුර",q:"කෙනෙකු පැයකට km 5ක් ඇවිදියි. පැය 2යි මිනිත්තු 30කදී දුර කීයද?",a:"12.5",exp:"පැය 2යි මිනිත්තු 30 = පැය 2.5. දුර = 5 × 2.5 = 12.5km.",steps:["මිනිත්තු 30 = පැය 0.5.","මුළු කාලය = පැය 2.5.","දුර = වේගය × කාලය = 5 × 2.5 = 12.5km."],tip:"30 minutes = half hour."},
+{grade:5,topic:"කාලය හා දුර",q:"වාහනයක් පැයකට km 60ක් යයි. මිනිත්තු 30කදී දුර කීයද?",a:"30",exp:"මිනිත්තු 30 = පැය 1/2. 60 × 1/2 = 30km.",steps:["පැය 1කදී 60km.","මිනිත්තු 30 කියන්නේ පැය භාගයයි.","60 ÷ 2 = 30."],tip:"මිනිත්තු 30 = පැය භාගය."},
+{grade:5,topic:"මුදල් ගැටලු",q:"රු.250 බැගින් පොත් 6ක් සහ රු.80 බැගින් pens 5ක් ගත්තොත් මුළු මුදල කීයද?",a:"1900",exp:"පොත්: 250 × 6 = 1500. Pens: 80 × 5 = 400. මුළු = 1900.",steps:["පොත් සඳහා: 250 × 6 = 1500.","Pens සඳහා: 80 × 5 = 400.","මුළු මුදල: 1500 + 400 = 1900."],tip:"භාණ්ඩ දෙකක් නම් වෙන වෙනම ගණනය කර එකතු කරන්න."},
+{grade:5,topic:"මුදල් ගැටලු",q:"රු.2000කින් රු.450 බැගින් 3ක් මිලදී ගත්තේය. ඉතිරි මුදල කීයද?",a:"650",exp:"450 × 3 = 1350. 2000 - 1350 = 650.",steps:["මුලින් වියදම සොයන්න: 450 × 3 = 1350.","ඉතිරි: 2000 - 1350 = 650."],tip:"වියදම මුලින් ගණනය කරන්න."},
+{grade:5,topic:"භාග",q:"3/5 of 100 = ?",a:"60",exp:"100 ÷ 5 = 20. 20 × 3 = 60.",steps:["100 කොටස් 5කට බෙදන්න: 100 ÷ 5 = 20.","එවැනි කොටස් 3ක්: 20 × 3 = 60."],tip:"a/b of number = number ÷ b × a."},
+{grade:5,topic:"භාග",q:"1/4 + 2/4 = ?",a:"3/4",exp:"Denominator එක සමාන නිසා numerator එකතු කරයි: 1 + 2 = 3.",steps:["Denominator එක 4යි.","1 + 2 = 3.","පිළිතුර 3/4යි."],tip:"Denominator එක සමාන නම් පහල අංකය වෙනස් නොකරන්න."},
+{grade:5,topic:"භාග",q:"1/2 of 360 = ?",a:"180",exp:"360 ÷ 2 = 180.",steps:["1/2 කියන්නේ භාගයයි.","360 ÷ 2 = 180."],tip:"1/2 සොයන විට 2න් බෙදන්න."},
+{grade:5,topic:"දත්ත වගු",q:"ප්‍රශ්න 40කින් 32ක් හරි නම් ප්‍රතිශතය කීයද?",a:"80",exp:"32/40 × 100 = 80%.",steps:["32 ÷ 40 = 0.8.","0.8 × 100 = 80."],tip:"ප්‍රතිශතය = කොටස ÷ මුළු ගණන × 100."},
+{grade:5,topic:"දත්ත වගු",q:"පොත් 5ක මිල: 120, 150, 130, 100, 200. මුළු මිල කීයද?",a:"700",exp:"120 + 150 + 130 + 100 + 200 = 700.",steps:["120 + 150 = 270.","270 + 130 = 400.","400 + 100 = 500.","500 + 200 = 700."],tip:"දත්ත කිහිපයක් නම් පිළිවෙළට එකතු කරන්න."},
+{grade:5,topic:"මිශ්‍ර ප්‍රශ්න",q:"15 × 12 = ?",a:"180",exp:"15 × 12 = 180.",steps:["15 × 10 = 150.","15 × 2 = 30.","150 + 30 = 180."],tip:"12 = 10 + 2 ලෙස බෙදා ගුණ කරන්න."},
+{grade:5,topic:"මිශ්‍ර ප්‍රශ්න",q:"720 ÷ 9 = ?",a:"80",exp:"720 ÷ 9 = 80.",steps:["9 × 8 = 72.","එයට 0 එකතු වීමෙන් 9 × 80 = 720."],tip:"අගට 0 තිබුණොත් කුඩා pattern එකෙන් හිතන්න."},
+{grade:5,topic:"මිශ්‍ර ප්‍රශ්න",q:"45% of 200 = ?",a:"90",exp:"45% of 200 = 90.",steps:["10% of 200 = 20.","40% = 80.","5% = 10.","80 + 10 = 90."],tip:"Percentages small parts වලට කඩලා කරන්න."},
+{grade:5,topic:"මිශ්‍ර ප්‍රශ්න",q:"3,500g = kg කීයද?",a:"3.5",exp:"3,500g = 3.5kg.",steps:["1000g = 1kg.","3500 ÷ 1000 = 3.5."],tip:"g සිට kg වෙත 1000න් බෙදන්න."},
+{grade:5,topic:"මිශ්‍ර ප්‍රශ්න",q:"සෘජුකෝණාස්‍රයක දිග 12cm, පළල 8cm. පරිමිතිය කීයද?",a:"40",exp:"පරිමිතිය = 2 × (12 + 8) = 40cm.",steps:["දිග + පළල = 12 + 8 = 20.","2 × 20 = 40."],tip:"සෘජුකෝණාස්‍ර පරිමිතිය = 2 × (දිග + පළල)."}
 ];
 let currentGrade=null,currentTopic=null,activeQuestions=[],currentIndex=0,totalAnswered=0,correctCount=0,answeredCurrent=false;
-function scrollToGrades(){document.getElementById("grades").scrollIntoView({behavior:"smooth"})}
-function selectGrade(grade){currentGrade=grade;currentTopic=null;const sec=document.getElementById("topics-section"),list=document.getElementById("topic-list");document.getElementById("topics-title").textContent=`${grade} වසර - මාතෘකාවක් තෝරන්න`;list.innerHTML="";topics[grade].forEach(topic=>{const btn=document.createElement("button");btn.className="topic-btn";btn.textContent=topic;btn.onclick=()=>startPractice(grade,topic);list.appendChild(btn)});sec.classList.remove("hidden");document.getElementById("practice-section").classList.add("hidden");sec.scrollIntoView({behavior:"smooth"})}
-function startPractice(grade,topic){currentGrade=grade;currentTopic=topic;const topicQs=getUniqueQuestions(questions.filter(x=>x.grade===grade&&x.topic===topic));const gradeQs=getUniqueQuestions(questions.filter(x=>x.grade===grade));activeQuestions=topicQs.length>=3?shuffle(topicQs):shuffle(gradeQs);currentIndex=0;totalAnswered=0;correctCount=0;answeredCurrent=false;const titleSuffix=topicQs.length>=3?topic:`${topic} + මිශ්‍ර ප්‍රශ්න`;document.getElementById("practice-title").textContent=`${grade} වසර - ${titleSuffix}`;document.getElementById("practice-section").classList.remove("hidden");showQuestion();updateScore();document.getElementById("practice-section").scrollIntoView({behavior:"smooth"})}
-function showDailyPractice(){currentGrade="Daily";currentTopic="අද ප්‍රශ්න 10";activeQuestions=shuffle(getUniqueQuestions(questions)).slice(0,10);currentIndex=0;totalAnswered=0;correctCount=0;answeredCurrent=false;document.getElementById("practice-title").textContent="අද ප්‍රශ්න 10";document.getElementById("practice-section").classList.remove("hidden");document.getElementById("topics-section").classList.add("hidden");showQuestion();updateScore();document.getElementById("practice-section").scrollIntoView({behavior:"smooth"})}
-function showQuestion(){const item=activeQuestions[currentIndex];if(!item)return;document.getElementById("question-number").textContent=`ප්‍රශ්නය ${currentIndex+1} / ${activeQuestions.length}`;document.getElementById("question-topic").textContent=`${item.grade} වසර • ${item.topic}`;document.getElementById("question-text").textContent=item.q;document.getElementById("answer-input").value="";document.getElementById("feedback").className="feedback hidden";document.getElementById("feedback").textContent="";document.getElementById("solution-box").className="solution-box hidden";document.getElementById("solution-box").innerHTML="";answeredCurrent=false;document.getElementById("answer-input").focus()}
-function checkAnswer(){if(answeredCurrent)return;const userAnswer=normalizeAnswer(document.getElementById("answer-input").value),item=activeQuestions[currentIndex],correctAnswer=normalizeAnswer(item.a),feedback=document.getElementById("feedback");if(!userAnswer){feedback.className="feedback wrong";feedback.textContent="කරුණාකර පිළිතුරක් ලියන්න.";return}totalAnswered++;answeredCurrent=true;if(userAnswer===correctAnswer){correctCount++;feedback.className="feedback correct";feedback.textContent="හරි! ඔබට ලකුණු 1ක් ලැබුණා.";showSolution(item,true)}else{feedback.className="feedback wrong";feedback.innerHTML=`පිළිතුර වැරදියි. නිවැරදි පිළිතුර: <strong>${item.a}</strong><br>${item.exp}`;showSolution(item,false)}updateScore();saveDailyScoreIfNeeded()}
-function showSolution(item,isCorrect){const box=document.getElementById("solution-box"),steps=item.steps||[item.exp],title=isCorrect?"හොඳයි! මෙන්න විසඳන ක්‍රමය":"Step-by-step විසඳුම",stepItems=steps.map(s=>`<li>${s}</li>`).join(""),tip=item.tip?`<div class="thinking-tip">මතක තබාගන්න: ${item.tip}</div>`:"";box.className=isCorrect?"solution-box correct-method":"solution-box";box.innerHTML=`<h3>${title}</h3><ol>${stepItems}</ol>${tip}`}
-function nextQuestion(){if(!activeQuestions.length)return;currentIndex++;if(currentIndex>=activeQuestions.length){activeQuestions=shuffle(activeQuestions);currentIndex=0}showQuestion()}
-function resetPractice(){totalAnswered=0;correctCount=0;currentIndex=0;activeQuestions=shuffle(activeQuestions);showQuestion();updateScore()}
-function backToTopics(){if(currentGrade==="Daily"){document.getElementById("practice-section").classList.add("hidden");scrollToGrades();return}document.getElementById("practice-section").classList.add("hidden");document.getElementById("topics-section").classList.remove("hidden");document.getElementById("topics-section").scrollIntoView({behavior:"smooth"})}
-function updateScore(){const wrong=totalAnswered-correctCount,percentage=totalAnswered===0?0:Math.round(correctCount/totalAnswered*100);document.getElementById("total-count").textContent=totalAnswered;document.getElementById("correct-count").textContent=correctCount;document.getElementById("wrong-count").textContent=wrong;document.getElementById("percentage").textContent=`${percentage}%`;document.getElementById("progress-bar").style.width=`${percentage}%`;const saved=localStorage.getItem("dailyMathScore");if(saved)document.getElementById("saved-score").textContent=`අවසන් daily practice ප්‍රතිඵලය: ${saved}`}
-function saveDailyScoreIfNeeded(){if(currentTopic!=="අද ප්‍රශ්න 10")return;const percentage=totalAnswered===0?0:Math.round(correctCount/totalAnswered*100);localStorage.setItem("dailyMathScore",`${correctCount}/${totalAnswered} - ${percentage}%`)}
-function handleEnter(e){if(e.key==="Enter")checkAnswer()}
-function normalizeAnswer(v){return String(v).trim().toLowerCase().replace(/\s+/g,"")}
-function getUniqueQuestions(list){const seen=new Set();return list.filter(item=>{const key=`${item.grade}-${item.topic}-${item.q}`;if(seen.has(key))return false;seen.add(key);return true})}
-function shuffle(array){const copy=[...array];for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]]}return copy}
+function scrollToGrades(){document.getElementById("grades").scrollIntoView({behavior:"smooth"});}
+function selectGrade(grade){currentGrade=grade;currentTopic=null;const topicSection=document.getElementById("topics-section"),topicList=document.getElementById("topic-list"),title=document.getElementById("topics-title");title.textContent=`${grade} වසර - මාතෘකාවක් තෝරන්න`;topicList.innerHTML="";topics[grade].forEach(topic=>{const btn=document.createElement("button");btn.className="topic-btn";btn.textContent=topic;btn.onclick=()=>startPractice(grade,topic);topicList.appendChild(btn);});topicSection.classList.remove("hidden");document.getElementById("practice-section").classList.add("hidden");topicSection.scrollIntoView({behavior:"smooth"});}
+function startPractice(grade,topic){currentGrade=grade;currentTopic=topic;const topicQuestions=getUniqueQuestions(questions.filter(item=>item.grade===grade&&item.topic===topic));const gradeQuestions=getUniqueQuestions(questions.filter(item=>item.grade===grade));activeQuestions=topicQuestions.length>=3?shuffle(topicQuestions):shuffle(gradeQuestions);currentIndex=0;totalAnswered=0;correctCount=0;answeredCurrent=false;const titleSuffix=topicQuestions.length>=3?topic:`${topic} + මිශ්‍ර ප්‍රශ්න`;document.getElementById("practice-title").textContent=`${grade} වසර - ${titleSuffix}`;document.getElementById("practice-section").classList.remove("hidden");document.getElementById("practice-section").scrollIntoView({behavior:"smooth"});showQuestion();updateScore();}
+function showDailyPractice(){currentGrade="Daily";currentTopic="අද ප්‍රශ්න 10";activeQuestions=shuffle(getUniqueQuestions(questions)).slice(0,10);currentIndex=0;totalAnswered=0;correctCount=0;answeredCurrent=false;document.getElementById("practice-title").textContent="අද ප්‍රශ්න 10";document.getElementById("practice-section").classList.remove("hidden");document.getElementById("topics-section").classList.add("hidden");document.getElementById("practice-section").scrollIntoView({behavior:"smooth"});showQuestion();updateScore();}
+function showQuestion(){const item=activeQuestions[currentIndex];if(!item)return;document.getElementById("question-number").textContent=`ප්‍රශ්නය ${currentIndex+1} / ${activeQuestions.length}`;document.getElementById("question-topic").textContent=`${item.grade} වසර • ${item.topic}`;document.getElementById("question-text").textContent=item.q;document.getElementById("answer-input").value="";document.getElementById("feedback").className="feedback hidden";document.getElementById("feedback").textContent="";document.getElementById("solution-box").className="solution-box hidden";document.getElementById("solution-box").innerHTML="";answeredCurrent=false;document.getElementById("answer-input").focus();}
+function checkAnswer(){if(answeredCurrent)return;const userAnswer=normalizeAnswer(document.getElementById("answer-input").value),item=activeQuestions[currentIndex],correctAnswer=normalizeAnswer(item.a),feedback=document.getElementById("feedback");if(!userAnswer){feedback.className="feedback wrong";feedback.textContent="කරුණාකර පිළිතුරක් ලියන්න.";return;}totalAnswered++;answeredCurrent=true;if(userAnswer===correctAnswer){correctCount++;feedback.className="feedback correct";feedback.textContent="හරි! ඔබට ලකුණු 1ක් ලැබුණා.";showSolution(item,true);}else{feedback.className="feedback wrong";feedback.innerHTML=`පිළිතුර වැරදියි. නිවැරදි පිළිතුර: <strong>${item.a}</strong><br>${item.exp}`;showSolution(item,false);}updateScore();saveDailyScoreIfNeeded();}
+function showSolution(item,isCorrect){const box=document.getElementById("solution-box"),steps=item.steps||[item.exp],title=isCorrect?"හොඳයි! මෙන්න විසඳන ක්‍රමය":"Step-by-step විසඳුම",stepItems=steps.map(step=>`<li>${step}</li>`).join(""),tip=item.tip?`<div class="thinking-tip">මතක තබාගන්න: ${item.tip}</div>`:"";box.className=isCorrect?"solution-box correct-method":"solution-box";box.innerHTML=`<h3>${title}</h3><ol>${stepItems}</ol>${tip}`;}
+function nextQuestion(){if(activeQuestions.length===0)return;currentIndex++;if(currentIndex>=activeQuestions.length){currentIndex=0;activeQuestions=shuffle(activeQuestions);}showQuestion();}
+function resetPractice(){totalAnswered=0;correctCount=0;currentIndex=0;activeQuestions=shuffle(activeQuestions);showQuestion();updateScore();}
+function backToTopics(){if(currentGrade==="Daily"){document.getElementById("practice-section").classList.add("hidden");scrollToGrades();return;}document.getElementById("practice-section").classList.add("hidden");document.getElementById("topics-section").classList.remove("hidden");document.getElementById("topics-section").scrollIntoView({behavior:"smooth"});}
+function updateScore(){const wrongCount=totalAnswered-correctCount,percentage=totalAnswered===0?0:Math.round(correctCount/totalAnswered*100);document.getElementById("total-count").textContent=totalAnswered;document.getElementById("correct-count").textContent=correctCount;document.getElementById("wrong-count").textContent=wrongCount;document.getElementById("percentage").textContent=`${percentage}%`;document.getElementById("progress-bar").style.width=`${percentage}%`;const saved=localStorage.getItem("dailyMathScore");if(saved){document.getElementById("saved-score").textContent=`අවසන් daily practice ප්‍රතිඵලය: ${saved}`;}}
+function saveDailyScoreIfNeeded(){if(currentTopic!=="අද ප්‍රශ්න 10")return;const percentage=totalAnswered===0?0:Math.round(correctCount/totalAnswered*100);localStorage.setItem("dailyMathScore",`${correctCount}/${totalAnswered} - ${percentage}%`);}
+function handleEnter(event){if(event.key==="Enter")checkAnswer();}
+function normalizeAnswer(value){return String(value).trim().toLowerCase().replace(/\s+/g,"");}
+function getUniqueQuestions(list){const seen=new Set();return list.filter(item=>{const key=`${item.grade}-${item.topic}-${item.q}`;if(seen.has(key))return false;seen.add(key);return true;});}
+function shuffle(array){const copy=[...array];for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;}
 </script>
-</body></html>
+</body>
+</html>
